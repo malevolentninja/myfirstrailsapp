@@ -1,0 +1,84 @@
+// Place all the styles related to the ideas controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$white: #fff;
+$black: #000;
+$standardletter-spacing:.2em;
+$primaryColor:#FF4C4C;
+$container-width: 100%;
+$darkrd:#7F2626;
+$dark: darken($darkrd,15%);
+// $fade: fade-in($primaryColor, 10%);
+// darken ($color, $amount)
+// opacify($color, $amount) / fade-in($color, $amount) = more opaque
+
+//could use  a mixin with borders? @include border-radius($radius, $vertical-radius)
+
+/*
+$settings: (
+    maxWidth: 800px,
+    columns: 12,
+    margin: 15px,
+    breakpoints: (
+        xs: "(max-width : 480px)",
+        sm: "(max-width : 768px) and (min-width: 481px)",
+        md: "(max-width : 1024px)  and (min-width: 769px)",
+        lg: "(min-width : 1025px)"
+    )
+);
+*/
+
+
+
+body {
+  padding-top: 10em;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  font-family: 'Lora', serif;
+}
+h1 {
+  letter-spacing: $standardletter-spacing;
+  font-size: 1.5em;
+  font-family: 'Ubuntu', sans-serif;
+  color: $darkrd;
+}
+
+table {
+  margin-top: 2em 3em;
+  padding: 2em 3em;
+  margin-left: 28em;
+  margin-right: 27em;
+  background-color: $white;
+  border-radius: 100em;
+  font-weight: 600;
+  opacity: 0.8;
+  &:hover {
+    background-color: $dark;
+  }
+}
+
+table, td, th {
+  vertical-align: middle; border: none;
+  letter-spacing: .1em;
+}
+
+
+th {
+  border-bottom: .2em solid #DDD;
+  background-color: #FF4C4C;
+  &:hover {
+    //background-color: $fade;
+  }
+}
+
+img {
+  width: 2em;
+}
+
+
+
+footer {
+  margin-top: 10em;
+  letter-spacing: $standardletter-spacing;
+}
